@@ -1,3 +1,6 @@
+// spider a website looking for a selector
+// with help from http://planzero.org/blog/2013/03/07/spidering_the_web_with_casperjs
+
 var timeout = 20000;
 
 var visited = [];
@@ -75,6 +78,7 @@ function checkSelector(selector) {
 
 function imagesLoading() {
   return true;
+  // from http://codeutopia.net/blog/2014/02/05/tips-for-taking-screenshots-with-phantomjs-casperjs/
   //var images = document.getElementsByTagName('img');
   //return [].prototype.every.call(images, function(i) { return i.complete; });
 }
