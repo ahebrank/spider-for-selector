@@ -40,7 +40,7 @@ function usableLink(href) {
   if (href.length < 1) {
     return false;
   }
-  if (href.startsWith("mailto")) {
+  if (href.startsWith("mailto") || href.startsWith("#")) {
     return false;
   }
   if (href.startsWith("//")) {
